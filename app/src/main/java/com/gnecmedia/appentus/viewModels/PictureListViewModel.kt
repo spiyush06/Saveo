@@ -34,8 +34,4 @@ class PictureListViewModel(private val app: Application) : AndroidViewModel(app)
         }
         return mList
     }
-
-    fun onRefreshClicked(view: View) {
-        fetchCountriesFromServer(true)
-    }
 }

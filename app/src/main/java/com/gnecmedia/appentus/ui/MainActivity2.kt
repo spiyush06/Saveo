@@ -9,7 +9,6 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ahmadrosid.svgloader.SvgLoader
 import com.gnecmedia.appentus.R
 import com.gnecmedia.appentus.adapters.GridSpacingItemDecoration
 import com.gnecmedia.appentus.adapters.PictureListAdapter
@@ -58,10 +57,8 @@ class MainActivity2 : AppCompatActivity() {
         mViewModel.mShowProgressBar.observe(this, Observer { bt ->
             if (bt) {
                 mActivityBinding.progressBar.visibility = View.VISIBLE
-                mActivityBinding.floatingActionButton.hide()
             } else {
                 mActivityBinding.progressBar.visibility = View.GONE
-                mActivityBinding.floatingActionButton.show()
             }
         })
         mViewModel.mShowNetworkError.observe(this, Observer {
@@ -71,6 +68,5 @@ class MainActivity2 : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        SvgLoader.pluck().close()
     }
 }
