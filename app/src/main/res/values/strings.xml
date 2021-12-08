@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Appentus</string>
-    <string name="refresh_button">refresh Button</string>
+    <string name="app_name">Saveo Task</string>
     <string name="app_no_internet_msg">No Internet</string>
 </resources>

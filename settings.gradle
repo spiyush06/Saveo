@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Appentus"
+rootProject.name = "Saveo"
